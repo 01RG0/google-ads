@@ -56,6 +56,7 @@ async def test_captured_region_and_custom_date_fields_are_encoded():
         ("Saudi Arabia", 2682),
         ("AE", 2784),
         ("Qatar", 2634),
+        ("PS", 2275),
     ],
 )
 async def test_country_code_or_name_maps_to_geo_filter(region, geo_id):
@@ -67,7 +68,8 @@ async def test_country_code_or_name_maps_to_geo_filter(region, geo_id):
 
 
 def test_geo_target_dataset_has_global_country_coverage_and_anywhere_alias():
-    assert len(COUNTRY_GEO_TARGET_IDS) >= 200
+    assert len(COUNTRY_GEO_TARGET_IDS) >= 220
     assert lookup_country_geo_target("US") == lookup_country_geo_target("United States") == 2840
     assert lookup_country_geo_target("anywhere") is None
     assert lookup_country_geo_target("IR") is None
+    assert lookup_country_geo_target("Palestine") == 2275

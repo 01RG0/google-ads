@@ -275,7 +275,7 @@ Pass `response["2"]` verbatim as `request["4"]` in the next call. When `response
 
 ## Region, date, and creative-detail findings
 
-Selecting a region adds its Google geo target criterion ID as a one-item list in `SearchCreatives` filter field `"3"."8"`. Browser captures verified US=`2840`, UK=`2826`, Egypt=`2818`, Saudi Arabia=`2682`, United Arab Emirates=`2784`, and Qatar=`2634`. The client accepts active country/territory ISO alpha-2 codes or official names from Google's published [Geo targets dataset](https://developers.google.com/google-ads/api/data/geotargets), using the 2026-10-06 CSV. That file has 219 active country/territory entries. `anywhere` omits the filter. Google's dataset notes that some active locations may not be targetable; the six values above were also checked against the Transparency Center UI. Iran and Palestine have no active Country entry in this CSV and were not offered by the captured region selector.
+Selecting a region adds its Google geo target criterion ID as a one-item list in `SearchCreatives` filter field `"3"."8"`. Browser captures verified US=`2840`, UK=`2826`, Egypt=`2818`, Saudi Arabia=`2682`, United Arab Emirates=`2784`, Qatar=`2634`, and Palestine=`2275`. The client accepts active country/territory ISO alpha-2 codes or official names from Google's published [Geo targets dataset](https://developers.google.com/google-ads/api/data/geotargets), using the 2026-10-06 CSV's 219 active entries, plus Palestine's directly captured selector mapping. `anywhere` omits the filter. Google's dataset notes that some active locations may not be targetable. Iran is absent from the dataset and was not offered by the captured Transparency Center selector.
 
 The advertiser page exposes `Today`, `Yesterday`, `Last 7 days`, `Last 30 days`, and custom date choices. Selecting built-in ranges did not change the observed request body, but applying a custom range did. Setting Nov 1–5, 2026 produced `"3"."6": 20261101` and `"3"."7": 20261106`. This indicates integer `YYYYMMDD` dates, with the end encoded as the day after the inclusive date selected in the UI. The client accepts ISO dates (`YYYY-MM-DD`) and converts them to this shape.
 
@@ -303,7 +303,7 @@ The saved HARs contain `SearchSuggestions`, `LookupService/GetAdvertiserById`,
 `LookupService/GetCreativeById`, `SearchCreatives`, and
 `GetAdvertiserDunsMapping`, plus `/_/logging` telemetry. Captures show a
 domain-filtered request, advertiser-filtered requests, region filters for the
-US, UK, Egypt, Saudi Arabia, UAE, and Qatar, and a custom date range filter. A later
+US, UK, Egypt, Saudi Arabia, UAE, Qatar, and Palestine, and a custom date range filter. A later
 creative page whose cursor was sent by the client has not been captured.
 Pagination is indicated by response field `"2"`, but end-to-end pagination
 replay remains to be verified.

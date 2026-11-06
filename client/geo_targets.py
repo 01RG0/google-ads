@@ -13,12 +13,16 @@ COUNTRY_GEO_TARGET_IDS: dict[str, int] = {
     row["code"].upper(): int(row["geo_target_id"])
     for row in _DATA["countries"]
 }
+# The current Google Ads CSV omits Palestine, but the Transparency Center
+# region selector directly emitted geo ID 2275 for Palestine.
+COUNTRY_GEO_TARGET_IDS["PS"] = 2275
 _names: dict[str, list[str]] = {}
 for _row in _DATA["countries"]:
     _names.setdefault(_row["name"].casefold(), []).append(_row["code"].upper())
 COUNTRY_NAME_TO_CODE: dict[str, str] = {
     name: codes[0] for name, codes in _names.items() if len(codes) == 1
 }
+COUNTRY_NAME_TO_CODE["palestine"] = "PS"
 
 
 def lookup_country_geo_target(region: str) -> int | None:
