@@ -96,8 +96,13 @@ class TransparencyClient:
             raise ResponseShapeError("SearchSuggestions response is missing list field '1'")
         results = []
         for row in rows:
-            inner = row.get("1") if isinstance(row, dict) else None
-            if not isinstance(inner, dict):
+            if not isinstance(row, dict):
+                raise ResponseShapeError("SearchSuggestions item is missing object field '1'")
+            if isinstance(row.get("1"), dict):
+                inner = row["1"]
+            elif isinstance(row.get("2"), str):
+                inner = row
+            else:
                 raise ResponseShapeError("SearchSuggestions item is missing object field '1'")
             results.append(AdvertiserSuggestion.model_validate({**inner, "raw": inner}))
         return results
