@@ -1,0 +1,9 @@
+captures/
+*.har
+__pycache__/
+*.pyc
+.env
+*.db
+.pytest_cache/
+dist/
+*.egg-info/

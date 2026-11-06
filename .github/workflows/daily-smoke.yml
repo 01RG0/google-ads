@@ -1,0 +1,32 @@
+name: Daily Transparency Center smoke test
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-transparency-smoke
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install client and test dependencies
+        run: python -m pip install -e ".[dev]"
+      - name: Check saved response contracts
+        run: python -m pytest -q -m "not live"
+      - name: Check live advertiser and creative RPCs
+        env:
+          ADS_TRANSPARENCY_LIVE: "1"
+        run: python -m pytest -q -m live

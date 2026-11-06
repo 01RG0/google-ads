@@ -1,0 +1,1102 @@
+{
+  "source": "https://developers.google.com/static/google-ads/api/data/geo/geotargets-2026-10-06.csv.zip",
+  "version": "2026-10-06",
+  "license": "CC BY 4.0 (Google Developers content)",
+  "countries": [
+    {
+      "code": "AD",
+      "name": "Andorra",
+      "geo_target_id": 2020
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "geo_target_id": 2784
+    },
+    {
+      "code": "AF",
+      "name": "Afghanistan",
+      "geo_target_id": 2004
+    },
+    {
+      "code": "AG",
+      "name": "Antigua and Barbuda",
+      "geo_target_id": 2028
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "geo_target_id": 2008
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "geo_target_id": 2051
+    },
+    {
+      "code": "AO",
+      "name": "Angola",
+      "geo_target_id": 2024
+    },
+    {
+      "code": "AQ",
+      "name": "Antarctica",
+      "geo_target_id": 2010
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "geo_target_id": 2032
+    },
+    {
+      "code": "AS",
+      "name": "American Samoa",
+      "geo_target_id": 2016
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "geo_target_id": 2040
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "geo_target_id": 2036
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "geo_target_id": 2031
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "geo_target_id": 2070
+    },
+    {
+      "code": "BB",
+      "name": "Barbados",
+      "geo_target_id": 2052
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "geo_target_id": 2050
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "geo_target_id": 2056
+    },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "geo_target_id": 2854
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "geo_target_id": 2100
+    },
+    {
+      "code": "BH",
+      "name": "Bahrain",
+      "geo_target_id": 2048
+    },
+    {
+      "code": "BI",
+      "name": "Burundi",
+      "geo_target_id": 2108
+    },
+    {
+      "code": "BJ",
+      "name": "Benin",
+      "geo_target_id": 2204
+    },
+    {
+      "code": "BL",
+      "name": "Saint Barthelemy",
+      "geo_target_id": 2652
+    },
+    {
+      "code": "BN",
+      "name": "Brunei",
+      "geo_target_id": 2096
+    },
+    {
+      "code": "BO",
+      "name": "Bolivia",
+      "geo_target_id": 2068
+    },
+    {
+      "code": "BQ",
+      "name": "Caribbean Netherlands",
+      "geo_target_id": 2535
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "geo_target_id": 2076
+    },
+    {
+      "code": "BS",
+      "name": "The Bahamas",
+      "geo_target_id": 2044
+    },
+    {
+      "code": "BT",
+      "name": "Bhutan",
+      "geo_target_id": 2064
+    },
+    {
+      "code": "BW",
+      "name": "Botswana",
+      "geo_target_id": 2072
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "geo_target_id": 2112
+    },
+    {
+      "code": "BZ",
+      "name": "Belize",
+      "geo_target_id": 2084
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "geo_target_id": 2124
+    },
+    {
+      "code": "CC",
+      "name": "Cocos (Keeling) Islands",
+      "geo_target_id": 2166
+    },
+    {
+      "code": "CD",
+      "name": "Democratic Republic of the Congo",
+      "geo_target_id": 2180
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "geo_target_id": 2140
+    },
+    {
+      "code": "CG",
+      "name": "Republic of the Congo",
+      "geo_target_id": 2178
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "geo_target_id": 2756
+    },
+    {
+      "code": "CI",
+      "name": "Cote d'Ivoire",
+      "geo_target_id": 2384
+    },
+    {
+      "code": "CK",
+      "name": "Cook Islands",
+      "geo_target_id": 2184
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "geo_target_id": 2152
+    },
+    {
+      "code": "CM",
+      "name": "Cameroon",
+      "geo_target_id": 2120
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "geo_target_id": 2156
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "geo_target_id": 2170
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "geo_target_id": 2188
+    },
+    {
+      "code": "CV",
+      "name": "Cabo Verde",
+      "geo_target_id": 2132
+    },
+    {
+      "code": "CW",
+      "name": "Curacao",
+      "geo_target_id": 2531
+    },
+    {
+      "code": "CX",
+      "name": "Christmas Island",
+      "geo_target_id": 2162
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "geo_target_id": 2196
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "geo_target_id": 2203
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "geo_target_id": 2276
+    },
+    {
+      "code": "DJ",
+      "name": "Djibouti",
+      "geo_target_id": 2262
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "geo_target_id": 2208
+    },
+    {
+      "code": "DM",
+      "name": "Dominica",
+      "geo_target_id": 2212
+    },
+    {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "geo_target_id": 2214
+    },
+    {
+      "code": "DZ",
+      "name": "Algeria",
+      "geo_target_id": 2012
+    },
+    {
+      "code": "EC",
+      "name": "Ecuador",
+      "geo_target_id": 2218
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "geo_target_id": 2233
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "geo_target_id": 2818
+    },
+    {
+      "code": "ER",
+      "name": "Eritrea",
+      "geo_target_id": 2232
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "geo_target_id": 2724
+    },
+    {
+      "code": "ET",
+      "name": "Ethiopia",
+      "geo_target_id": 2231
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "geo_target_id": 2246
+    },
+    {
+      "code": "FJ",
+      "name": "Fiji",
+      "geo_target_id": 2242
+    },
+    {
+      "code": "FM",
+      "name": "Micronesia",
+      "geo_target_id": 2583
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "geo_target_id": 2250
+    },
+    {
+      "code": "GA",
+      "name": "Gabon",
+      "geo_target_id": 2266
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "geo_target_id": 2826
+    },
+    {
+      "code": "GD",
+      "name": "Grenada",
+      "geo_target_id": 2308
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "geo_target_id": 2268
+    },
+    {
+      "code": "GG",
+      "name": "Guernsey",
+      "geo_target_id": 2831
+    },
+    {
+      "code": "GH",
+      "name": "Ghana",
+      "geo_target_id": 2288
+    },
+    {
+      "code": "GM",
+      "name": "The Gambia",
+      "geo_target_id": 2270
+    },
+    {
+      "code": "GN",
+      "name": "Guinea",
+      "geo_target_id": 2324
+    },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "geo_target_id": 2226
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "geo_target_id": 2300
+    },
+    {
+      "code": "GS",
+      "name": "South Georgia and the South Sandwich Islands",
+      "geo_target_id": 2239
+    },
+    {
+      "code": "GT",
+      "name": "Guatemala",
+      "geo_target_id": 2320
+    },
+    {
+      "code": "GU",
+      "name": "Guam",
+      "geo_target_id": 2316
+    },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "geo_target_id": 2624
+    },
+    {
+      "code": "GY",
+      "name": "Guyana",
+      "geo_target_id": 2328
+    },
+    {
+      "code": "HM",
+      "name": "Heard Island and McDonald Islands",
+      "geo_target_id": 2334
+    },
+    {
+      "code": "HN",
+      "name": "Honduras",
+      "geo_target_id": 2340
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "geo_target_id": 2191
+    },
+    {
+      "code": "HT",
+      "name": "Haiti",
+      "geo_target_id": 2332
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "geo_target_id": 2348
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "geo_target_id": 2360
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "geo_target_id": 2372
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "geo_target_id": 2376
+    },
+    {
+      "code": "IM",
+      "name": "Isle of Man",
+      "geo_target_id": 2833
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "geo_target_id": 2356
+    },
+    {
+      "code": "IQ",
+      "name": "Iraq",
+      "geo_target_id": 2368
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "geo_target_id": 2352
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "geo_target_id": 2380
+    },
+    {
+      "code": "JE",
+      "name": "Jersey",
+      "geo_target_id": 2832
+    },
+    {
+      "code": "JM",
+      "name": "Jamaica",
+      "geo_target_id": 2388
+    },
+    {
+      "code": "JO",
+      "name": "Jordan",
+      "geo_target_id": 2400
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "geo_target_id": 2392
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "geo_target_id": 2404
+    },
+    {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "geo_target_id": 2417
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "geo_target_id": 2116
+    },
+    {
+      "code": "KI",
+      "name": "Kiribati",
+      "geo_target_id": 2296
+    },
+    {
+      "code": "KM",
+      "name": "Comoros",
+      "geo_target_id": 2174
+    },
+    {
+      "code": "KN",
+      "name": "Saint Kitts and Nevis",
+      "geo_target_id": 2659
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "geo_target_id": 2410
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "geo_target_id": 2414
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "geo_target_id": 2398
+    },
+    {
+      "code": "LA",
+      "name": "Laos",
+      "geo_target_id": 2418
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "geo_target_id": 2422
+    },
+    {
+      "code": "LC",
+      "name": "Saint Lucia",
+      "geo_target_id": 2662
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "geo_target_id": 2438
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "geo_target_id": 2144
+    },
+    {
+      "code": "LR",
+      "name": "Liberia",
+      "geo_target_id": 2430
+    },
+    {
+      "code": "LS",
+      "name": "Lesotho",
+      "geo_target_id": 2426
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "geo_target_id": 2440
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "geo_target_id": 2442
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "geo_target_id": 2428
+    },
+    {
+      "code": "LY",
+      "name": "Libya",
+      "geo_target_id": 2434
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "geo_target_id": 2504
+    },
+    {
+      "code": "MC",
+      "name": "Monaco",
+      "geo_target_id": 2492
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "geo_target_id": 2498
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "geo_target_id": 2499
+    },
+    {
+      "code": "MF",
+      "name": "Saint Martin",
+      "geo_target_id": 2663
+    },
+    {
+      "code": "MG",
+      "name": "Madagascar",
+      "geo_target_id": 2450
+    },
+    {
+      "code": "MH",
+      "name": "Marshall Islands",
+      "geo_target_id": 2584
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "geo_target_id": 2807
+    },
+    {
+      "code": "ML",
+      "name": "Mali",
+      "geo_target_id": 2466
+    },
+    {
+      "code": "MM",
+      "name": "Myanmar (Burma)",
+      "geo_target_id": 2104
+    },
+    {
+      "code": "MN",
+      "name": "Mongolia",
+      "geo_target_id": 2496
+    },
+    {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "geo_target_id": 2580
+    },
+    {
+      "code": "MR",
+      "name": "Mauritania",
+      "geo_target_id": 2478
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "geo_target_id": 2470
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "geo_target_id": 2480
+    },
+    {
+      "code": "MV",
+      "name": "Maldives",
+      "geo_target_id": 2462
+    },
+    {
+      "code": "MW",
+      "name": "Malawi",
+      "geo_target_id": 2454
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "geo_target_id": 2484
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "geo_target_id": 2458
+    },
+    {
+      "code": "MZ",
+      "name": "Mozambique",
+      "geo_target_id": 2508
+    },
+    {
+      "code": "NA",
+      "name": "Namibia",
+      "geo_target_id": 2516
+    },
+    {
+      "code": "NC",
+      "name": "New Caledonia",
+      "geo_target_id": 2540
+    },
+    {
+      "code": "NE",
+      "name": "Niger",
+      "geo_target_id": 2562
+    },
+    {
+      "code": "NF",
+      "name": "Norfolk Island",
+      "geo_target_id": 2574
+    },
+    {
+      "code": "NG",
+      "name": "Nigeria",
+      "geo_target_id": 2566
+    },
+    {
+      "code": "NI",
+      "name": "Nicaragua",
+      "geo_target_id": 2558
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "geo_target_id": 2528
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "geo_target_id": 2578
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "geo_target_id": 2524
+    },
+    {
+      "code": "NR",
+      "name": "Nauru",
+      "geo_target_id": 2520
+    },
+    {
+      "code": "NU",
+      "name": "Niue",
+      "geo_target_id": 2570
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "geo_target_id": 2554
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "geo_target_id": 2512
+    },
+    {
+      "code": "PA",
+      "name": "Panama",
+      "geo_target_id": 2591
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "geo_target_id": 2604
+    },
+    {
+      "code": "PF",
+      "name": "French Polynesia",
+      "geo_target_id": 2258
+    },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "geo_target_id": 2598
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "geo_target_id": 2608
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "geo_target_id": 2586
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "geo_target_id": 2616
+    },
+    {
+      "code": "PM",
+      "name": "Saint Pierre and Miquelon",
+      "geo_target_id": 2666
+    },
+    {
+      "code": "PN",
+      "name": "Pitcairn Islands",
+      "geo_target_id": 2612
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "geo_target_id": 2620
+    },
+    {
+      "code": "PW",
+      "name": "Palau",
+      "geo_target_id": 2585
+    },
+    {
+      "code": "PY",
+      "name": "Paraguay",
+      "geo_target_id": 2600
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "geo_target_id": 2634
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "geo_target_id": 2642
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "geo_target_id": 2688
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "geo_target_id": 2643
+    },
+    {
+      "code": "RW",
+      "name": "Rwanda",
+      "geo_target_id": 2646
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "geo_target_id": 2682
+    },
+    {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "geo_target_id": 2090
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "geo_target_id": 2690
+    },
+    {
+      "code": "SD",
+      "name": "Sudan",
+      "geo_target_id": 2736
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "geo_target_id": 2752
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "geo_target_id": 2702
+    },
+    {
+      "code": "SH",
+      "name": "Saint Helena, Ascension and Tristan da Cunha",
+      "geo_target_id": 2654
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "geo_target_id": 2705
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "geo_target_id": 2703
+    },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "geo_target_id": 2694
+    },
+    {
+      "code": "SM",
+      "name": "San Marino",
+      "geo_target_id": 2674
+    },
+    {
+      "code": "SN",
+      "name": "Senegal",
+      "geo_target_id": 2686
+    },
+    {
+      "code": "SO",
+      "name": "Somalia",
+      "geo_target_id": 2706
+    },
+    {
+      "code": "SR",
+      "name": "Suriname",
+      "geo_target_id": 2740
+    },
+    {
+      "code": "SS",
+      "name": "South Sudan",
+      "geo_target_id": 2728
+    },
+    {
+      "code": "ST",
+      "name": "Sao Tome and Principe",
+      "geo_target_id": 2678
+    },
+    {
+      "code": "SV",
+      "name": "El Salvador",
+      "geo_target_id": 2222
+    },
+    {
+      "code": "SX",
+      "name": "Sint Maarten",
+      "geo_target_id": 2534
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "geo_target_id": 2760
+    },
+    {
+      "code": "SZ",
+      "name": "Eswatini",
+      "geo_target_id": 2748
+    },
+    {
+      "code": "TD",
+      "name": "Chad",
+      "geo_target_id": 2148
+    },
+    {
+      "code": "TF",
+      "name": "French Southern and Antarctic Lands",
+      "geo_target_id": 2260
+    },
+    {
+      "code": "TG",
+      "name": "Togo",
+      "geo_target_id": 2768
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "geo_target_id": 2764
+    },
+    {
+      "code": "TJ",
+      "name": "Tajikistan",
+      "geo_target_id": 2762
+    },
+    {
+      "code": "TK",
+      "name": "Tokelau",
+      "geo_target_id": 2772
+    },
+    {
+      "code": "TL",
+      "name": "Timor-Leste",
+      "geo_target_id": 2626
+    },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "geo_target_id": 2795
+    },
+    {
+      "code": "TN",
+      "name": "Tunisia",
+      "geo_target_id": 2788
+    },
+    {
+      "code": "TO",
+      "name": "Tonga",
+      "geo_target_id": 2776
+    },
+    {
+      "code": "TR",
+      "name": "Turkiye",
+      "geo_target_id": 2792
+    },
+    {
+      "code": "TT",
+      "name": "Trinidad and Tobago",
+      "geo_target_id": 2780
+    },
+    {
+      "code": "TV",
+      "name": "Tuvalu",
+      "geo_target_id": 2798
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "geo_target_id": 2834
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "geo_target_id": 2804
+    },
+    {
+      "code": "UG",
+      "name": "Uganda",
+      "geo_target_id": 2800
+    },
+    {
+      "code": "UM",
+      "name": "United States Minor Outlying Islands",
+      "geo_target_id": 2581
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "geo_target_id": 2840
+    },
+    {
+      "code": "UY",
+      "name": "Uruguay",
+      "geo_target_id": 2858
+    },
+    {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "geo_target_id": 2860
+    },
+    {
+      "code": "VA",
+      "name": "Vatican City",
+      "geo_target_id": 2336
+    },
+    {
+      "code": "VC",
+      "name": "Saint Vincent and the Grenadines",
+      "geo_target_id": 2670
+    },
+    {
+      "code": "VE",
+      "name": "Venezuela",
+      "geo_target_id": 2862
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "geo_target_id": 2704
+    },
+    {
+      "code": "VU",
+      "name": "Vanuatu",
+      "geo_target_id": 2548
+    },
+    {
+      "code": "WF",
+      "name": "Wallis and Futuna",
+      "geo_target_id": 2876
+    },
+    {
+      "code": "WS",
+      "name": "Samoa",
+      "geo_target_id": 2882
+    },
+    {
+      "code": "YE",
+      "name": "Yemen",
+      "geo_target_id": 2887
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "geo_target_id": 2710
+    },
+    {
+      "code": "ZM",
+      "name": "Zambia",
+      "geo_target_id": 2894
+    },
+    {
+      "code": "ZW",
+      "name": "Zimbabwe",
+      "geo_target_id": 2716
+    }
+  ]
+}

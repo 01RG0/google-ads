@@ -1,0 +1,73 @@
+import json
+from urllib.parse import parse_qs
+
+import pytest
+
+from client import TransparencyClient
+from client.geo_targets import COUNTRY_GEO_TARGET_IDS, lookup_country_geo_target
+
+
+class FakeResponse:
+    status_code = 200
+    headers = {}
+
+    def json(self):
+        return {"1": []}
+
+
+class FakeHTTP:
+    def __init__(self):
+        self.url = None
+        self.content = None
+
+    async def post(self, url, content):
+        self.url = url
+        self.content = content
+        return FakeResponse()
+
+    async def aclose(self):
+        pass
+
+
+@pytest.mark.asyncio
+async def test_captured_region_and_custom_date_fields_are_encoded():
+    transport = FakeHTTP()
+    client = TransparencyClient(client=transport, min_interval=0, max_retries=0)
+    await client.list_creatives(
+        advertiser_id="AR-example",
+        region="US",
+        date_from="2026-11-01",
+        date_to="2026-11-05",
+    )
+    form = parse_qs(transport.content)
+    request = json.loads(form["f.req"][0])
+    assert transport.url.endswith("SearchService/SearchCreatives?authuser=")
+    assert request["3"]["6"] == 20261101
+    assert request["3"]["7"] == 20261106
+    assert request["3"]["8"] == [2840]
+
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize(
+    ("region", "geo_id"),
+    [
+        ("GB", 2826),
+        ("Egypt", 2818),
+        ("Saudi Arabia", 2682),
+        ("AE", 2784),
+        ("Qatar", 2634),
+    ],
+)
+async def test_country_code_or_name_maps_to_geo_filter(region, geo_id):
+    transport = FakeHTTP()
+    client = TransparencyClient(client=transport, min_interval=0, max_retries=0)
+    await client.list_creatives(region=region)
+    request = json.loads(parse_qs(transport.content)["f.req"][0])
+    assert request["3"]["8"] == [geo_id]
+
+
+def test_geo_target_dataset_has_global_country_coverage_and_anywhere_alias():
+    assert len(COUNTRY_GEO_TARGET_IDS) >= 200
+    assert lookup_country_geo_target("US") == lookup_country_geo_target("United States") == 2840
+    assert lookup_country_geo_target("anywhere") is None
+    assert lookup_country_geo_target("IR") is None
