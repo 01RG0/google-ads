@@ -30,6 +30,26 @@ class FakeHTTP:
 
 
 @pytest.mark.asyncio
+async def test_search_advertisers_accepts_direct_suggestion_items():
+    class SuggestionResponse(FakeResponse):
+        def json(self):
+            return {"1": [{"1": "Nike, Inc.", "2": "AR-example", "3": "US"}]}
+
+    class SuggestionHTTP(FakeHTTP):
+        async def post(self, url, content):
+            self.url = url
+            self.content = content
+            return SuggestionResponse()
+
+    client = TransparencyClient(client=SuggestionHTTP(), min_interval=0, max_retries=0)
+    results = await client.search_advertisers("Nike", limit=2)
+
+    assert results[0].name == "Nike, Inc."
+    assert results[0].advertiser_id == "AR-example"
+    assert results[0].country_code == "US"
+
+
+@pytest.mark.asyncio
 async def test_captured_region_and_custom_date_fields_are_encoded():
     transport = FakeHTTP()
     client = TransparencyClient(client=transport, min_interval=0, max_retries=0)
