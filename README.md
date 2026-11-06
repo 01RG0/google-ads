@@ -79,6 +79,48 @@ Search by domain with `await ads.search_by_domain("nike.com")`. Continue
 pagination by passing `page.next_cursor` unchanged. `get_creative` calls the
 captured detail RPC directly.
 
+### Example returned data
+
+`search_advertisers("Nike")` returns advertiser suggestions like:
+
+```text
+name="Nike, Inc."
+advertiser_id="AR…"
+country_code="US"
+```
+
+Each item in `page.creatives` is a typed `Creative`. Here is a shortened
+`creative.model_dump()` from the captured response:
+
+```json
+{
+  "advertiser_id": "AR…",
+  "creative_id": "CR…",
+  "advertiser_name": "WPP MEDIA MANAGEMENT",
+  "format_type": 1,
+  "first_shown": {"seconds": "1635145200", "nanos": 0},
+  "last_shown": {"seconds": "1793939486", "nanos": 47472000},
+  "region_count": 1838,
+  "domain": "nike.com",
+  "content": {
+    "3": {
+      "2": "<img src=\"https://tpc.googlesyndication.com/archive/simgad/<image-id>\" height=\"269\" width=\"348\">"
+    },
+    "5": true
+  }
+}
+```
+
+The `content` value is the site's format-specific creative data. For this image
+ad it contains HTML with the image's CDN `src`; the client returns that URL but
+does not download the image. Video and text creatives have different content.
+The enclosing `CreativePage` also provides `next_cursor`, `total_count`, and
+`alternate_count`. `get_creative(...)` returns detail data with its variations
+and preview URLs.
+
+The HTTP API serializes the original numeric RPC field keys, while the Python
+client exposes named fields such as `creative_id`, `format_type`, and `domain`.
+
 ### Region data
 
 Country and territory IDs come from the
